@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <article>
+        <h2>{{ contact.firstname }}</h2>
+        <div class="metadata">Rajouté le {{ contact.createdAt | date('d-m-Y')}} à {{ contact.createdAt | date('H:i')}}</div>
+        <div class="content">{{ contact.firstname }} {{ contact.lastname }}</div>
+        <div class="content">{{ contact.email }}</div>
+        <hr>
+        <h1>Adresses</h1>
+            <div class="content">Adresse</div>
+            <div class="content">Pays</div>
+            <div class="content">Code postal</div>
+            <div class="content">Ville</div>
+        <hr>
+            <div class="content">Adresse</div>
+            <div class="content">Pays</div>
+            <div class="content">Code postal</div>
+            <div class="content">Ville</div>
+
+
+        <a href="#" class="btn btn-success">Modifier</a>
+    </article>
+{% endblock %}
