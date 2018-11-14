@@ -3,22 +3,36 @@
 {% block body %}
     <article>
         <h2>{{ contact.firstname }}</h2>
-        <div class="metadata">Rajouté le {{ contact.createdAt | date('d-m-Y')}} à {{ contact.createdAt | date('H:i')}}</div>
+        <div class="metadata">Rajouté le {{ contact.createdAt | date('d-m-Y') }} à {{ contact.createdAt | date('H:i') }}
+            pour l'utilisateur {{ contact.user.login }}</div>
         <div class="content">{{ contact.firstname }} {{ contact.lastname }}</div>
         <div class="content">{{ contact.email }}</div>
-        <hr>
-        <h1>Adresses</h1>
-            <div class="content">Adresse</div>
-            <div class="content">Pays</div>
-            <div class="content">Code postal</div>
-            <div class="content">Ville</div>
-        <hr>
-            <div class="content">Adresse</div>
-            <div class="content">Pays</div>
-            <div class="content">Code postal</div>
-            <div class="content">Ville</div>
 
+        <hr>
 
-        <a href="#" class="btn btn-success">Modifier</a>
+        <section id="addresses">
+            {% for address in contact.addresses %}
+                <div class="address">
+                    <div class="row">
+                        <div class="col-3">
+                            {{ address.street }}
+                        </div>
+                        <div class="col-3">
+                            {{ address.city }} {{ address.zip }}
+                        </div>
+                        <div class="col-3">
+                            {{ address.country }}
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn btn-success">Modifier l'adresse</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            {% endfor %}
+        </section>
+
+        <a href="{{ path('contact_edit', {id : contact.id}) }}" class="btn btn-success">Modifier ce contact</a>
+        <a href="{{ path('contact_edit', {id : contact.id}) }}" class="btn btn-primary">Rajouter une adresse à ce contact</a>
     </article>
 {% endblock %}

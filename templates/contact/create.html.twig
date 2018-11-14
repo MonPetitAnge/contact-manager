@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% form_theme formContact 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+    <h1>Création d'un contact</h1>
+
+    {{ form_start(formContact) }}
+
+    {{ form_row(formContact.firstname, {'attr' : {
+        'placeholder' : "Nom de votre contact",
+        'data-behavior' : 'uppercase'
+    }}) }}
+    {{ form_row(formContact.lastname, {'attr' : {
+        'placeholder' : "Prénom de votre contact"
+    }}) }}
+    {{ form_row(formContact.email, {'attr' : {
+        'placeholder' : "Adresse email de votre contact"
+    }}) }}
+
+    <button type="submit" class="btn btn-success">
+        {% if editMode %}
+            Modifier
+        {% else %}
+            Ajouter
+        {% endif %}
+        le contact
+    </button>
+
+    {{ form_end(formContact) }}
+
+{% endblock %}
