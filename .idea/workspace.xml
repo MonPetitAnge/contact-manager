@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php" line="17" />
+    <bookmark url="file://$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php" line="49" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48d0f1ba-4596-4a3e-b406-4f3f7dbd4fd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/contact/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/contact-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/contact-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +55,7 @@
           <entry key="env" value="34" />
           <entry key="gitignore" value="53" />
           <entry key="md" value="555" />
-          <entry key="php" value="572" />
+          <entry key="php" value="1328" />
           <entry key="twig" value="901" />
         </counts>
       </usages-collector>
@@ -71,7 +64,7 @@
           <entry key=".env file" value="34" />
           <entry key="Git file" value="1" />
           <entry key="Markdown" value="555" />
-          <entry key="PHP" value="572" />
+          <entry key="PHP" value="1328" />
           <entry key="PLAIN_TEXT" value="52" />
           <entry key="Twig" value="901" />
         </counts>
@@ -138,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Address.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="253">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -165,11 +158,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+              <folding>
+                <element signature="e#36#59#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,11 +186,11 @@
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/contact/home.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Contact.php" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/templates/contact/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ContactController.php" />
         <option value="$PROJECT_DIR$/templates/contact/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php" />
       </list>
     </option>
   </component>
@@ -303,9 +299,10 @@
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="333" />
     <option name="y" value="111" />
     <option name="width" value="1440" />
@@ -405,12 +402,12 @@
       <workItem from="1542137244674" duration="982000" />
       <workItem from="1542144197306" duration="598000" />
       <workItem from="1542145452827" duration="5675000" />
-      <workItem from="1542224036298" duration="1820000" />
+      <workItem from="1542224036298" duration="3168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12304000" />
+    <option name="totallyTimeSpent" value="13652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -523,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -553,8 +543,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Address.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="253">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ContactFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="e#36#59#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
