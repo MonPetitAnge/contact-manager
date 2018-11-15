@@ -74,8 +74,6 @@ We use [Git](https://git-scm.com//) for versioning.
 
 * **Walid Mahmoud** - *Web developer PHP /Symfony* - [Tchisuky](https://github.com/MonPetitAnge)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 ??
