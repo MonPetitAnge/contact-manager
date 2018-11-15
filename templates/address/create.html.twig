@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% form_theme addressForm 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+    <h1>Création d'une addresse</h1>
+
+    {{ form_start(addressForm) }}
+
+    {{ form_row(addressForm.street, {'attr' : {
+        'placeholder' : "Votre addresse, ex. 7 avenue Général Leclerc",
+        'data-behavior' : 'uppercase'
+    }}) }}
+    {{ form_row(addressForm.city, {'attr' : {
+        'placeholder' : "Nom de la ville"
+    }}) }}
+    {{ form_row(addressForm.zip, {'attr' : {
+        'placeholder' : "Code postal"
+    }}) }}
+    {{ form_row(addressForm.country, {'attr' : {
+        'placeholder' : "Le pays"
+    }}) }}
+
+    <button type="submit" class="btn btn-success">
+        {% if editMode %}
+            Modifier
+        {% else %}
+            Ajouter
+        {% endif %}
+        l'adresse
+    </button>
+
+    {{ form_end(addressForm) }}
+
+{% endblock %}

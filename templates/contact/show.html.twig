@@ -24,7 +24,7 @@
                             {{ address.country }}
                         </div>
                         <div class="col-3">
-                            <a href="#" class="btn btn-success">Modifier l'adresse</a>
+                            <a href="{{ path('address_edit', {id : address.id}) }}" class="btn btn-success">Modifier l'adresse</a>
                         </div>
                     </div>
                 </div>
@@ -33,6 +33,6 @@
         </section>
 
         <a href="{{ path('contact_edit', {id : contact.id}) }}" class="btn btn-success">Modifier ce contact</a>
-        <a href="{{ path('contact_edit', {id : contact.id}) }}" class="btn btn-primary">Rajouter une adresse à ce contact</a>
+        <a href="{{ path('address_create', {idContact : contact.id}) }}" class="btn btn-primary">Rajouter une adresse à ce contact</a>
     </article>
 {% endblock %}
