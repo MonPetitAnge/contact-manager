@@ -1,19 +1,13 @@
 # Contact Manager
 
-A contact management system
-
 Un système de gestion de contacts
 
-## Getting Started - Comment bien débuter
+## Lancer le projet
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 Ces instructions vous permettrons de copier le projet et de le démarrer sur vos machine en local pour un but de développement ou tests. Lisez la partie sur le déploiement pour savoir comment mettre en place le projet.
 
-### Prerequisites - Prérequis
-
-- A web server
-- Git
+### Prérequis
 
 - Un serveur web
 - Git
@@ -24,59 +18,59 @@ Ces instructions vous permettrons de copier le projet et de le démarrer sur vos
 
 ### Installation
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Cloner le projet
 
 ```
-Give the example
+composer install
 ```
 
-And repeat
+Vous devriez lancez les fixtures ou vous connecter à la page /registration
 
 ```
-until finished
+php bin/console doctrine:fixtures:load
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+Vous pouvez jouer les migrations avec 
 ```
-Give an example
+php bin/console doctrine:migrations:migrate
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+Le fichier SQL est sous :
 
 ```
-Give an example
+src/Migrations/contact_manager.sql
 ```
 
-## Deployment
+## Lancement des tests
 
-Add additional notes about how to deploy this on a live system
+Le test unitaire sur la validation d'email est juste théorique, vue que la validation a été effectuée au niveau des asserts
 
-## Built With
+## Construit avec
 
-* [Symfony](https://symfony.com/) - The web framework used
+* [Symfony](https://symfony.com/) - Le framework utilisé
 
-## Contributing
+Faute de temps et par soucis de bien faire. 
 
-Not yet ready
+Pour la classe abstraite j'ai utilisé AbstractController et l'interface UserInterface ont été utilisé. 
+
+Un poc incomplet en PHP natif pourrait être présenté
+
+```
+Rajouts de classes: Request et Response
+classe Dispatcher 
+classe Router
+etc ... 
+```
+
+## Contributions
+
+??
 
 ## Versioning
 
 We use [Git](https://git-scm.com//) for versioning. 
 
-## Authors
+## Auteurs
 
 * **Walid Mahmoud** - *Web developer PHP /Symfony* - [Tchisuky](https://github.com/MonPetitAnge)
 
@@ -84,8 +78,4 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Walid Mahmoud
+??
