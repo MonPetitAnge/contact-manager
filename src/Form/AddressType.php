@@ -11,6 +11,7 @@ class AddressType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        // pas besoin de générer un champ contact
         $builder
             ->add('street')
             ->add('city')

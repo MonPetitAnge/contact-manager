@@ -11,6 +11,7 @@ class ContactType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        // pas la peine de générer un champ user ou createdAt
         $builder
             ->add('firstname')
             ->add('lastname')

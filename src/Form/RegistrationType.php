@@ -12,6 +12,7 @@ class RegistrationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        // rajout d'un champ de confirmation de mdp
         $builder
             ->add('login')
             ->add('password', PasswordType::class)

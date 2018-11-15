@@ -2,7 +2,13 @@
 {% form_theme formContact 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
-    <h1>Création d'un contact</h1>
+    <h1>
+    {% if editMode %}
+        Modification
+    {% else %}
+        Création
+    {% endif %}
+    d'un contact</h1>
 
     {{ form_start(formContact) }}
 

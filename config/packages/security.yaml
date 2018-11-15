@@ -25,7 +25,7 @@ security:
 
             logout:
                 path: security_logout
-                target: contact
+                target: /registration
             # activate different ways to authenticate
 
             # http_basic: true

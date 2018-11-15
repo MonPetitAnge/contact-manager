@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello !{% endblock %}
+{% block title %}Votre liste de contacts{% endblock %}
 
 {% block body %}
 <section class="contacts">
@@ -11,6 +11,7 @@
         <div class="content">{{ contact.firstname }} {{ contact.lastname }}</div>
         <div class="content">{{ contact.email }}</div>
         <a href="{{ path('contact_show', {'id': contact.id}) }}" class="btn btn-success">Détails</a>
+        <a href="{{ path('contact_edit', {'id': contact.id}) }}" class="btn btn-success">Modifier</a>
     </article>
     {% endfor %}
 </section>

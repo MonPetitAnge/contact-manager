@@ -2,7 +2,13 @@
 {% form_theme addressForm 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
-    <h1>Création d'une addresse</h1>
+    <h1>
+    {% if editMode %}
+        Modification
+    {% else %}
+        Création
+    {% endif %}
+    d'une addresse</h1>
 
     {{ form_start(addressForm) }}
 

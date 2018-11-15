@@ -27,6 +27,7 @@ class SecurityController extends AbstractController
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
+            // hashage bcrypt du mdp - voir security.yaml
             $hash = $encoder->encodePassword($user, $user->getPassword());
             $user->setPassword($hash);
 
